@@ -37,11 +37,11 @@
 }
 
 button{
-	display:none;
+	display:none !important;
 }
 
 button.visible{
-	display:block;
+	display:block !important;
 }
 
 .blue{
@@ -63,8 +63,9 @@ button.visible{
 	/*color:white !important;*/
 }
 
-ion-radio{
-	min-height:60em !important;
+.item-radio{
+	/*margin-bottom:30px !important;*/
+	min-height:60px !important;
 }
 
 

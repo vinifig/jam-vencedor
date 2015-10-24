@@ -44,7 +44,7 @@ angular.module('starter.controllers').
 
 		// PUBLIC
 			$scope.color = "blue";
-			$scope.resp = undefined;
+			$scope.resp = {};
 
 			$scope.pergunta = {
 				"message" : "Você gosta de batata?",
@@ -64,13 +64,13 @@ angular.module('starter.controllers').
 			];
 
 			$scope.saveValue = function(){
-				$rootScope.addResp(i,$scope.resp);
+				$rootScope.addResp(0,$scope.resp.resp);
 			}
-
+			$scope.debug = function(){
+				console.log($scope);
+			}
 		// INICIALIZA
 			$timeout(mostraTitulo,500)
-			
+				
 
-	})
-
-	;
+	});
