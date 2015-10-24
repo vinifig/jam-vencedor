@@ -2,6 +2,7 @@ angular.module('starter.controllers').
 	controller("IntroCtrl", function($scope, $timeout, $interval){
 		// PRIVATE
 			var i = 0;
+
 			var mostraParagrafo = function(){
 				if(i < $scope.intro.paragrafos.length)
 					$scope.intro.paragrafos[i].visible = true
@@ -12,14 +13,26 @@ angular.module('starter.controllers').
 
 		// PUBLIC
 			$scope.intro = {};
-			$scope.intro.color = "blue"
+			$scope.intro.color = "intro",
 			$scope.intro.paragrafos = [
 					{
-						"message" : "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy",
+						"message" : "O que te faz Feliz?",
+						"fim" : false,
 						"visible" : false
 					},
 					{
-						"message" : "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy",
+						"message" : "Me pergunto, o que te faz feliz também faz os outros felizes?",
+						"fim" : true,
+						"visible" : false
+					},
+					{
+						"message" : "A coisa certa, o que é? ",
+						"fim" : false,
+						"visible" : false
+					},
+					{
+						"message" : "Me pergunto, quando você faz a coisa certa todos ficam felizes?",
+						"fim" : true,
 						"visible" : false
 					}
 			];

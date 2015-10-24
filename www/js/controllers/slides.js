@@ -29,6 +29,7 @@ angular.module('starter.controllers').
 			$interval(mostraParagrafo,1500)
 
 	})
+	
 	.controller("SlideTwoCtrl",function($scope, $rootScope, $timeout, $interval, $location){ // FORMULARIO
 		// PRIVATE
 			var i = 0;

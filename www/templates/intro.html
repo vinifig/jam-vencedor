@@ -1,8 +1,8 @@
 <ion-view view-title="Intro">
   <ion-content scroll="false">
-    <div class="box {{intro.color}}">
-		    	<p ng-class="paragrafo.visible ? 'visible' : '' "  ng-repeat="paragrafo in intro.paragrafos">{{paragrafo.message}}</p>
-		    	<a href="#/app/slide1" ng-class="disponivel ? 'visible' : ''">Continuar</a>
+    <div class="box intro {{intro.color}}">
+    	<p ng-class="{ 'visible' : paragrafo.visible, 'breakline' : paragrafo.fim} "  ng-repeat="paragrafo in intro.paragrafos">{{paragrafo.message}}</p>
+    	<a href="#/app/slide1" ng-class="disponivel ? 'visible' : ''">Continuar</a>
     </div>
   </ion-content>
 </ion-view>

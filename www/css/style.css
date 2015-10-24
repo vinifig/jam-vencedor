@@ -9,21 +9,24 @@
   src: url('../fonts/Fairview_SmallCaps.otf');
 }
 
-*{
-	font-family: fairview !important;
+@font-face {
+	font-family:'bebas_neue';
+  src: url('../fonts/BebasNeue.otf');
 }
 
-
+@font-face {
+	font-family:'bellerose';
+  src: url('../fonts/Bellerose.ttf');
+}
 
 .box{
 	min-height:100vh !important;
 	max-height:100vh !important;
-	padding: 0 20px;
+	padding: 6.4vh 3.90vw ;
 }
 
-.box p, .box a{
-	line-height: 3rem;
-	font-size:2rem;
+.box p{
+	/*text-align:;*/
 }
 
 .box p, .box a, .box h2{
@@ -44,24 +47,32 @@ button.visible{
 	display:block !important;
 }
 
-.blue{
-	background:blue;
+/* BACKGROUNDS */
+
+.intro{
+	background: #d888b9;
+}
+.questionario{
+	background: #7eced0;
 }
 
-.blue p{
-	/*color:white !important;*/
+.pls{
+	background: #ef4438;
 }
 
-.yellow{
-	background:yellow;
+.pilula{
+	background: #ee6937;
 }
 
-.pink{
-	background:pink;
+.pena{
+	background: #333d98;
 }
-.pink p{
-	/*color:white !important;*/
+
+.negligencia{
+	background: #9d55a1;
 }
+
+/* FIM BACKGROUNDS */
 
 .item-radio{
 	/*margin-bottom:30px !important;*/
@@ -79,4 +90,24 @@ button.visible{
 
 .selected{
 	text-decoration: underline;
+}
+
+@media all and (orientation:landscape) {
+	.box.intro{
+		font-family:"bellerose" !important;
+	}
+	.box.intro p{
+		font-size:5.5vw !important;
+		line-height: 5.2vw;
+	}
+
+	.box.intro p.breakline{
+		margin-bottom:10vh;
+	}
+
+	.box.intro a{
+		margin-top:10px;
+		text-align: center;
+	}
+
 }
