@@ -69,6 +69,42 @@ angular.module('starter', ['ionic', 'starter.controllers'])
         }
       }
     })
+    .state('app.slide3', {
+      url: '/slide3',
+      views: {
+        'menuContent': {
+          templateUrl: 'templates/slide3.html',
+          controller: 'SlideThreeCtrl'
+        }
+      }
+    })
+    .state('app.slide4', {
+      url: '/slide4',
+      views: {
+        'menuContent': {
+          templateUrl: 'templates/slide4.html',
+          controller: 'SlideFourCtrl'
+        }
+      }
+    })
+    .state('app.slide5', {
+      url: '/slide5',
+      views: {
+        'menuContent': {
+          templateUrl: 'templates/slide5.html',
+          controller: 'SlideFiveCtrl'
+        }
+      }
+    })
+    .state('app.slide6', {
+      url: '/slide6',
+      views: {
+        'menuContent': {
+          templateUrl: 'templates/slide6.html',
+          controller: 'SlideSixCtrl'
+        }
+      }
+    })
     .state('app.chart', {
       url: '/chart',
       views: {

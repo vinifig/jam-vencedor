@@ -79,7 +79,7 @@ angular.module('starter.controllers').
 			}
 			$scope.paragrafos = [
 				{
-					"message" : "Com a aprovação da lei 5069/2013 passa a ser necessário exame de corpo e delito para comprovar o estupro e só então começar a receber assistência, que antes era garantida com o mero relato da vítima na rede do SUS",
+					"message" : "Com a aprovação da lei 5069/2013 passa a ser necessário exame de corpo e delito para comprovar o estupro e só então começar a receber assistência, que antes era garantida com o mero relato da vítima na rede do SUS.",
 					"visible" : false
 				}
 			];
@@ -93,7 +93,194 @@ angular.module('starter.controllers').
 			$timeout(mostraTitulo,500)
 
 	})
-	
+	.controller("SlideThreeCtrl",function($scope, $timeout, $interval, $location){ // TEXTO
+		// PRIVATE
+			var i = 0;
+
+			var mostraTitulo = function(){
+				$scope.titulo.visible = true;
+				$interval(mostraParagrafo,1000);
+			}
+			var mostraParagrafo = function(){
+				if(i < $scope.paragrafos.length){
+					$scope.paragrafos[i].visible = true
+					$scope.imagem.active = true;
+				}
+				else
+					$scope.disponivel = true;
+				i++;
+			}
+
+		// PUBLIC
+			$scope.color = "pilula";
+			$scope.imagem = {
+				"url":"tudo-03.png",
+				"active":false
+			};
+			$scope.titulo = {
+				"message": "Pílula do dia seguinte",
+				"visible": false
+			}
+			$scope.paragrafos = [
+				{
+					"message" : "De acordo com a bancada religiosa, a pilula do dia seguinte passaria a ser considerada um medicamento abortivo. Ao contrário do que aﬁrma o Ministério da Saúde atualmente que a categoriza como método contraceptivo emergencial.",
+					"visible" : false
+				}
+			];
+			$scope.disponivel = false;
+
+			$scope.call = function (){
+				$location.path('app/slide4');
+			};
+
+		// INICIALIZA
+			$timeout(mostraTitulo,500)
+
+	})
+	.controller("SlideFourCtrl",function($scope, $timeout, $interval, $location){ // TEXTO
+		// PRIVATE
+			var i = 0;
+
+			var mostraTitulo = function(){
+				$scope.titulo.visible = true;
+				$interval(mostraParagrafo,1000);
+			}
+			var mostraParagrafo = function(){
+				if(i < $scope.paragrafos.length){
+					$scope.paragrafos[i].visible = true
+					$scope.imagem.active = true;
+				}
+				else
+					$scope.disponivel = true;
+				i++;
+			}
+
+		// PUBLIC
+			$scope.color = "pilula";
+			$scope.imagem = {
+				"url":"tudo-04.png",
+				"active":false
+			};
+			$scope.titulo = {
+				"message": "Pílula do dia seguinte",
+				"visible": false
+			}
+			$scope.paragrafos = [
+				{
+					"message" : "Isso é importante porque a pílula do dia seguinte deixaria de ser fornecida legalmente em farmácias e até mesmo na rede pública de saúde.(SUS)",
+					"visible" : false
+				},
+				{
+					"message" : "E seu uso, comercialização, e administração se tornaria crime com pena variando de 6 meses a 2 anos de cadeia.",
+					"visible" : false
+				}
+			];
+			$scope.disponivel = false;
+
+			$scope.call = function (){
+				$location.path('app/slide5');
+			};
+
+		// INICIALIZA
+			$timeout(mostraTitulo,500)
+
+	})
+	.controller("SlideFiveCtrl",function($scope, $timeout, $interval, $location){ // TEXTO
+		// PRIVATE
+			var i = 0;
+
+			var mostraTitulo = function(){
+				$scope.titulo.visible = true;
+				$interval(mostraParagrafo,1000);
+			}
+			var mostraParagrafo = function(){
+				if(i < $scope.paragrafos.length){
+					$scope.paragrafos[i].visible = true
+					$scope.imagem.active = true;
+				}
+				else
+					$scope.disponivel = true;
+				i++;
+			}
+
+		// PUBLIC
+			$scope.color = "pena";
+			$scope.imagem = {
+				"url":"tudo-05.png",
+				"active":false
+			};
+			$scope.titulo = {
+				"message": "Pena",
+				"visible": false
+			}
+			$scope.paragrafos = [
+				{
+					"message" : "A pena por induzir, instigar ou auxiliar ﬁca como 6 meses a 2 anos. Se cometido por um proﬁssional da saúde a pena aumenta para um a 3 anos. ",
+					"visible" : false
+				},
+				{
+					"message" : "E não só isso, a pena aumenta em um terço se a gestante tiver menos que 18 anos.",
+					"visible" : false
+				}
+			];
+			$scope.disponivel = false;
+
+			$scope.call = function (){
+				$location.path('app/slide6');
+			};
+
+		// INICIALIZA
+			$timeout(mostraTitulo,500)
+
+	})
+	.controller("SlideSixCtrl",function($scope, $timeout, $interval, $location){ // TEXTO
+		// PRIVATE
+			var i = 0;
+
+			var mostraTitulo = function(){
+				$scope.titulo.visible = true;
+				$interval(mostraParagrafo,1000);
+			}
+			var mostraParagrafo = function(){
+				if(i < $scope.paragrafos.length){
+					$scope.paragrafos[i].visible = true
+					$scope.imagem.active = true;
+				}
+				else
+					$scope.disponivel = true;
+				i++;
+			}
+
+		// PUBLIC
+			$scope.color = "negligencia";
+			$scope.imagem = {
+				"url":"tudo-06.png",
+				"active":false
+			};
+			$scope.titulo = {
+				"message": "Negligência",
+				"visible": false
+			}
+			$scope.paragrafos = [
+				{
+					"message" : "Nenhum proﬁssional de saúde ou instituição, em nenhum caso, poderá ser obrigado a aconselhar, receitar ou administrar procedimento que considere abortivo.",
+					"visible" : false
+				},
+				{
+					"message" : "Não importa o motivo, incluindo por princípios pessoais ou doutrinas que segue.",
+					"visible" : false
+				}
+			];
+			$scope.disponivel = false;
+
+			$scope.call = function (){
+				$location.path('app/sl');
+			};
+
+		// INICIALIZA
+			$timeout(mostraTitulo,500)
+
+	})
 	.controller("SlideFormCtrl",function($scope, $rootScope, $timeout, $interval, $location){ // FORMULARIO
 		// PRIVATE
 			var i = 0;
