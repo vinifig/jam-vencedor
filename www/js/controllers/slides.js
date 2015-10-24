@@ -1,5 +1,5 @@
 angular.module('starter.controllers').
-	controller("SlideOneCtrl",function($scope, $timeout, $interval){ // TEXTO
+	controller("SlideOneCtrl",function($scope, $timeout, $interval, $location){ // TEXTO
 		// PRIVATE
 			var i = 0;
 
@@ -37,13 +37,19 @@ angular.module('starter.controllers').
 						"visible" : false
 					}
 			];
+
+
+			$scope.call = function (){
+				$location.path('app/slide2');
+			};
+
 			$scope.disponivel = false;
 
 		// INICIALIZA
 			$timeout(mostraTitulo,500)
 
 	})
-	.controller("SlideTwoCtrl",function($scope, $timeout, $interval){ // TEXTO
+	.controller("SlideTwoCtrl",function($scope, $timeout, $interval, $location){ // TEXTO
 		// PRIVATE
 			var i = 0;
 
@@ -78,6 +84,10 @@ angular.module('starter.controllers').
 				}
 			];
 			$scope.disponivel = false;
+
+			$scope.call = function (){
+				$location.path('app/slide3');
+			};
 
 		// INICIALIZA
 			$timeout(mostraTitulo,500)

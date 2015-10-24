@@ -4,7 +4,7 @@
     	<div class="content-left">
 				<h2 ng-class="titulo.visible ? 'visible' : ''" >{{titulo.message}}</h2>  
 	    	<p ng-class="paragrafo.visible ? 'visible' : '' "  ng-repeat="paragrafo in paragrafos">{{paragrafo.message}}</p>
-	    	<a href="#/app/slide3" ng-class="disponivel ? 'visible' : ''">Continuar</a>
+	    	<button class="button icon-right ion-chevron-right button-aborto" ng-class="disponivel ? 'visible' : ''" ng-click="call()"></button> <!-- a cada clique um aborto -->
     	</div>
     	<div class="content-right">
     		<img ng-src="img/{{imagem.url}}" ng-class="imagem.active ? 'active' : ''">
