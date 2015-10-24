@@ -1,0 +1,73 @@
+/* Empty. Add your own CSS if you like */
+@font-face {
+	font-family:'fairview';
+  src: url('../fonts/Fairview_Regular.otf');
+}
+
+@font-face {
+	font-family:'fairview_small';
+  src: url('../fonts/Fairview_SmallCaps.otf');
+}
+
+*{
+	font-family: fairview !important;
+}
+
+
+
+.box{
+	min-height:100vh !important;
+	max-height:100vh !important;
+	padding: 0 20px;
+}
+
+.box p, .box a{
+	line-height: 3rem;
+	font-size:2rem;
+}
+
+.box p, .box a, .box h2{
+	margin: 0 auto;
+	color:rgba(255,255,255,0) !important;
+	transition:500ms;
+}
+
+.box p.visible, .box a.visible,.box h2.visible{
+	color:rgba(255,255,255,1) !important;
+}
+
+button{
+	display:none;
+}
+
+button.visible{
+	display:block;
+}
+
+.blue{
+	background:blue;
+}
+
+.blue p{
+	/*color:white !important;*/
+}
+
+.yellow{
+	background:yellow;
+}
+
+.pink{
+	background:pink;
+}
+.pink p{
+	/*color:white !important;*/
+}
+
+ion-radio{
+	min-height:60em !important;
+}
+
+
+.ion-record:before{
+	color:white !important;
+}
