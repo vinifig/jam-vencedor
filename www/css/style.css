@@ -19,11 +19,7 @@
   src: url('../fonts/Bellerose.ttf');
 }
 
-.box{
-	min-height:100vh !important;
-	max-height:100vh !important;
-	padding: 6.4vh 3.90vw ;
-}
+
 
 .box p{
 	/*text-align:;*/
@@ -107,8 +103,12 @@ button.visible{
 	text-decoration: underline;
 }
 
-@media all and (orientation:landscape) {
-
+@media all and (orientation: landscape) {
+	.box{
+		min-height:100vh !important;
+		max-height:100vh !important;
+		padding: 6.4vh 3.90vw ;
+	}
 	/* INTRO SLIDE */
 	.box.intro p{
 		font-size:5.5vw !important;
@@ -170,6 +170,80 @@ button.visible{
 	
 	.box.title .content-right img.active{
 		margin-top:30%;
+	}
+
+
+
+}
+
+@media all and (orientation: portrait) {
+
+	.box{
+		min-height:100vh !important;
+		max-height:100vh !important;
+		padding: 2.5vh 2.5vw 0.76vh 2.5vw;
+	}
+
+	/* INTRO SLIDE */
+	.box.intro{
+		padding-top: 16vh;
+	}
+	.box.intro p{
+		font-size:9vw !important;
+		line-height: 10.5vw;
+	}
+
+	.box.intro p.breakline{
+		margin-bottom:10vh;
+	}
+
+	.box .button-aborto{
+		margin-top:-3vh;
+		text-align: center;
+		border-color: transparent;
+    background-color: rgba(0, 0, 0, 0.25);
+    color: #fff;
+		float:right;
+		position:absolute;
+		right:5.5vw;
+		bottom:2.5vh;
+	}
+	
+	.button.icon-right:before {
+    text-align: center;
+    margin-right:3px;
+    font-weight: bolder;
+    font-size: xx-large;
+	}
+
+
+	/* CONTENT SLIDES */
+	.box.title .content-left, .box.title .content-right{
+		min-width:100%;
+		float:left;
+	}
+
+	.box.title h2{
+		font-size:6vh;
+		text-align:center;
+	}
+
+	.box.title p{
+		font-size:4.3vh !important;
+		line-height: 5vh;
+		margin-bottom:2vh;
+	}
+
+	.box.title .content-right{
+	}
+	.box.title .content-right img{
+		height:35vh;
+		margin-left:-50vw;
+		transition:2500ms;
+	}
+	
+	.box.title .content-right img.active{
+		margin-left:22.5vw;
 	}
 
 
