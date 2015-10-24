@@ -1,5 +1,5 @@
 angular.module('starter.controllers').
-	controller("IntroCtrl", function($scope, $timeout, $interval){
+	controller("IntroCtrl", function($scope, $timeout, $interval, $location){
 		// PRIVATE
 			var i = 0;
 
@@ -37,6 +37,10 @@ angular.module('starter.controllers').
 					}
 			];
 			$scope.disponivel = false;
+
+			$scope.call = function (){
+				$location.path('app/slide1');
+			};
 
 		// INICIALIZA
 			$timeout(mostraParagrafo,500)
