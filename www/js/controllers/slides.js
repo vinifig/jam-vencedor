@@ -29,7 +29,7 @@ angular.module('starter.controllers').
 			$interval(mostraParagrafo,1500)
 
 	})
-	.controller("SlideTwoCtrl",function($scope, $rootScope, $timeout, $interval){ // FORMULARIO
+	.controller("SlideTwoCtrl",function($scope, $rootScope, $timeout, $interval, $location){ // FORMULARIO
 		// PRIVATE
 			var i = 0;
 			var mostraTitulo = function(){
@@ -65,6 +65,7 @@ angular.module('starter.controllers').
 
 			$scope.saveValue = function(){
 				$rootScope.addResp(0,$scope.resp.resp);
+				$location.path("#/app/slide3")
 			}
 			$scope.debug = function(){
 				console.log($scope);

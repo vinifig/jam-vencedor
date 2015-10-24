@@ -72,3 +72,11 @@ button.visible{
 .ion-record:before{
 	color:white !important;
 }
+
+.jamRadio{
+	display:none;
+}
+
+.selected{
+	text-decoration: underline;
+}

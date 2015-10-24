@@ -1,11 +1,12 @@
 <ion-view view-title="Intro">
   <ion-content>
-    <form ng-model="resp" class="box {{color}}"> 
+    <form class="box {{color}}"> 
     	<h2 ng-class="pergunta.visible ? 'visible' : ''">{{pergunta.message}}</h2>
-    	<ion-list>
-    		<ion-radio ng-click="debug()" ng-class="opcao.visible ? 'visible' : '' " ng-model="resp.resp" ng-value="opcao.id" ng-repeat="opcao in opcoes">{{opcao.opcao}}</ion-radio>
-    	</ion-list>
-    	<!-- <a href="#/app/intro" ng-class="disponivel ? 'visible' : ''">Continuar</a> -->
+  		<label ng-repeat="opcao in opcoes track by $index" for="radio{{$index}}">
+  			<input class="jamRadio" id="radio{{$index}}" name="resp" ng-model="resp.resp" type="radio" value="{{$index}}">
+  			<p ng-class="$index == resp.resp ? 'selected' : ''" class="visible">{{$index}} - {{opcao.opcao}}</p>
+  		</label>
+  		<!-- <ion-radio ng-click="debug()" ng-class="opcao.visible ? 'visible' : '' " ng-model="resp.resp" ng-value="opcao.id" ng-repeat="opcao in opcoes track by $index">{{$index}} - {{opcao.opcao}}</ion-radio> -->
     	<button class="button button-balanced" ng-click="saveValue()" ng-class="resp.resp != undefined ? 'visible' : ''" >Continuar</button>
     	{{resp.resp}}
     </form>
