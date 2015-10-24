@@ -1,5 +1,5 @@
 <ion-view view-title="Intro">
-  <ion-content>
+  <ion-content scroll="false">
     <form class="box {{color}}"> 
     	<h2 ng-class="pergunta.visible ? 'visible' : ''">{{pergunta.message}}</h2>
   		<label ng-repeat="opcao in opcoes track by $index" for="radio{{$index}}">
