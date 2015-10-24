@@ -65,7 +65,7 @@ angular.module('starter.controllers').
 
 			$scope.saveValue = function(){
 				$rootScope.addResp(0,$scope.resp.resp);
-				$location.path("#/app/slide3")
+				$location.path("app/chart")
 			}
 			$scope.debug = function(){
 				console.log($scope);
