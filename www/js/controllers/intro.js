@@ -21,7 +21,7 @@ angular.module('starter.controllers').
 						"visible" : false
 					},
 					{
-						"message" : "Me pergunto, o que te faz feliz também faz os outros felizes?",
+						"message" : "Me pergunto... o que te faz feliz também faz os outros felizes?",
 						"fim" : true,
 						"visible" : false
 					},
@@ -31,7 +31,7 @@ angular.module('starter.controllers').
 						"visible" : false
 					},
 					{
-						"message" : "Me pergunto, quando você faz a coisa certa todos ficam felizes?",
+						"message" : "Me pergunto... quando você faz a coisa certa todos ficam felizes?",
 						"fim" : true,
 						"visible" : false
 					}

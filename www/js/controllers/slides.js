@@ -2,35 +2,89 @@ angular.module('starter.controllers').
 	controller("SlideOneCtrl",function($scope, $timeout, $interval){ // TEXTO
 		// PRIVATE
 			var i = 0;
+
+			var mostraTitulo = function(){
+				$scope.titulo.visible = true;
+				$interval(mostraParagrafo,1000);
+			}
 			var mostraParagrafo = function(){
-				if(i < $scope.paragrafos.length)
+				if(i < $scope.paragrafos.length){
 					$scope.paragrafos[i].visible = true
+					$scope.imagem.active = true;
+				}
 				else
 					$scope.disponivel = true;
 				i++;
 			}
 
 		// PUBLIC
-			$scope.color = "blue"
+			$scope.color = "pls";
+			$scope.imagem = {
+				"url":"tudo-01.png",
+				"active":false
+			};
+			$scope.titulo = {
+				"message": "PL 5069/2013",
+				"visible": false
+			}
 			$scope.paragrafos = [
 					{
-						"message" : "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy",
+						"message" : "Se trata de um projeto de lei que visa alterar a lei de atendimento as vítimas de violência sexual. (Lei N°12845/13)",
 						"visible" : false
 					},
 					{
-						"message" : "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy",
+						"message" : "Atualmente a lei 12845 prevê o tratamento físico e mental das vítimas de violência sexual inclundo medicamentos para a profilaxia da gravidez, sendo um desses a pílula do dia seguinte.",
 						"visible" : false
 					}
 			];
 			$scope.disponivel = false;
 
 		// INICIALIZA
-			$timeout(mostraParagrafo,500)
-			$interval(mostraParagrafo,1500)
+			$timeout(mostraTitulo,500)
+
+	})
+	.controller("SlideTwoCtrl",function($scope, $timeout, $interval){ // TEXTO
+		// PRIVATE
+			var i = 0;
+
+			var mostraTitulo = function(){
+				$scope.titulo.visible = true;
+				$interval(mostraParagrafo,1000);
+			}
+			var mostraParagrafo = function(){
+				if(i < $scope.paragrafos.length){
+					$scope.paragrafos[i].visible = true
+					$scope.imagem.active = true;
+				}
+				else
+					$scope.disponivel = true;
+				i++;
+			}
+
+		// PUBLIC
+			$scope.color = "pls";
+			$scope.imagem = {
+				"url":"tudo-02.png",
+				"active":false
+			};
+			$scope.titulo = {
+				"message": "PL 5069/2013",
+				"visible": false
+			}
+			$scope.paragrafos = [
+				{
+					"message" : "Com a aprovação da lei 5069/2013 passa a ser necessário exame de corpo e delito para comprovar o estupro e só então começar a receber assistência, que antes era garantida com o mero relato da vítima na rede do SUS",
+					"visible" : false
+				}
+			];
+			$scope.disponivel = false;
+
+		// INICIALIZA
+			$timeout(mostraTitulo,500)
 
 	})
 	
-	.controller("SlideTwoCtrl",function($scope, $rootScope, $timeout, $interval, $location){ // FORMULARIO
+	.controller("SlideFormCtrl",function($scope, $rootScope, $timeout, $interval, $location){ // FORMULARIO
 		// PRIVATE
 			var i = 0;
 			var mostraTitulo = function(){
@@ -44,7 +98,7 @@ angular.module('starter.controllers').
 			}
 
 		// PUBLIC
-			$scope.color = "blue";
+			$scope.color = "questionario";
 			$scope.resp = {};
 
 			$scope.pergunta = {

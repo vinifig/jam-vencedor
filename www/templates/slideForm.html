@@ -1,0 +1,13 @@
+<ion-view view-title="Intro">
+  <ion-content scroll="false">
+    <form class="box {{color}}"> 
+    	<h2 ng-class="pergunta.visible ? 'visible' : ''">{{pergunta.message}}</h2>
+  		<label ng-repeat="opcao in opcoes track by $index" for="radio{{$index}}">
+  			<input class="jamRadio" id="radio{{$index}}" name="resp" ng-model="resp.resp" type="radio" value="{{$index}}">
+  			<p ng-class="$index == resp.resp ? 'selected' : ''" class="visible">{{$index}} - {{opcao.opcao}}</p>
+  		</label>
+    	<button class="button button-balanced" ng-click="saveValue()" ng-class="resp.resp != undefined ? 'visible' : ''" >Continuar</button>
+    	{{resp.resp}}
+    </form>
+  </ion-content>
+</ion-view>

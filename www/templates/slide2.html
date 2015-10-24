@@ -1,13 +1,14 @@
-<ion-view view-title="Intro">
+<ion-view view-title="PL 5069/2013">
   <ion-content scroll="false">
-    <form class="box {{color}}"> 
-    	<h2 ng-class="pergunta.visible ? 'visible' : ''">{{pergunta.message}}</h2>
-  		<label ng-repeat="opcao in opcoes track by $index" for="radio{{$index}}">
-  			<input class="jamRadio" id="radio{{$index}}" name="resp" ng-model="resp.resp" type="radio" value="{{$index}}">
-  			<p ng-class="$index == resp.resp ? 'selected' : ''" class="visible">{{$index}} - {{opcao.opcao}}</p>
-  		</label>
-    	<button class="button button-balanced" ng-click="saveValue()" ng-class="resp.resp != undefined ? 'visible' : ''" >Continuar</button>
-    	{{resp.resp}}
-    </form>
+    <div class="box title {{color}}">
+    	<div class="content-left">
+				<h2 ng-class="titulo.visible ? 'visible' : ''" >{{titulo.message}}</h2>  
+	    	<p ng-class="paragrafo.visible ? 'visible' : '' "  ng-repeat="paragrafo in paragrafos">{{paragrafo.message}}</p>
+	    	<a href="#/app/slide3" ng-class="disponivel ? 'visible' : ''">Continuar</a>
+    	</div>
+    	<div class="content-right">
+    		<img ng-src="img/{{imagem.url}}" ng-class="imagem.active ? 'active' : ''">
+    	</div>
+    </div>
   </ion-content>
 </ion-view>

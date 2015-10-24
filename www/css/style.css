@@ -34,6 +34,20 @@
 	color:rgba(255,255,255,0) !important;
 	transition:500ms;
 }
+/*FONTES*/
+
+ .box.intro{
+	font-family:"bellerose" !important;
+}
+
+.box.title h2{
+	font-family:"bebas_neue" !important;
+}
+
+.box.title p{
+	font-family:"fairview" !important;
+}
+/*FIM FONTES*/
 
 .box p.visible, .box a.visible,.box h2.visible{
 	color:rgba(255,255,255,1) !important;
@@ -52,6 +66,7 @@ button.visible{
 .intro{
 	background: #d888b9;
 }
+
 .questionario{
 	background: #7eced0;
 }
@@ -93,9 +108,8 @@ button.visible{
 }
 
 @media all and (orientation:landscape) {
-	.box.intro{
-		font-family:"bellerose" !important;
-	}
+
+	/* INTRO SLIDE */
 	.box.intro p{
 		font-size:5.5vw !important;
 		line-height: 5.2vw;
@@ -109,5 +123,39 @@ button.visible{
 		margin-top:10px;
 		text-align: center;
 	}
+
+
+	/* CONTENT SLIDES */
+	.box.title .content-left{
+		max-width:60%;
+		float:left;
+	}
+
+	.box.title h2{
+		font-size:6vw;
+	}
+
+	.box.title p{
+		font-size:4vw !important;
+		line-height: 4.5vw;
+	}
+	
+	.box.title .content-right{
+		max-width:28%;
+		float:left;
+	}
+
+	.box.title .content-right img{
+		width:100%;
+		margin-left:20%;
+		margin-top:100vw;
+		transition:2500ms;
+	}
+	
+	.box.title .content-right img.active{
+		margin-top:30%;
+	}
+
+
 
 }

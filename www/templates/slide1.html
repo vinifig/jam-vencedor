@@ -1,8 +1,14 @@
-<ion-view view-title="Intro">
+<ion-view view-title="PL 5069/2013">
   <ion-content scroll="false">
-    <div class="box {{color}}">
-		    	<p ng-class="paragrafo.visible ? 'visible' : '' "  ng-repeat="paragrafo in paragrafos">{{paragrafo.message}}</p>
-		    	<a href="#/app/slide2" ng-class="disponivel ? 'visible' : ''">Continuar</a>
+    <div class="box title {{color}}">
+    	<div class="content-left">
+				<h2 ng-class="titulo.visible ? 'visible' : ''" >{{titulo.message}}</h2>  
+	    	<p ng-class="paragrafo.visible ? 'visible' : '' "  ng-repeat="paragrafo in paragrafos">{{paragrafo.message}}</p>
+	    	<a href="#/app/slide2" ng-class="disponivel ? 'visible' : ''">Continuar</a>
+    	</div>
+    	<div class="content-right">
+    		<img ng-src="img/{{imagem.url}}" ng-class="imagem.active ? 'active' : ''">
+    	</div>
     </div>
   </ion-content>
 </ion-view>
