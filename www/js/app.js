@@ -43,12 +43,12 @@ angular.module('starter', ['ionic', 'starter.controllers'])
       controller: 'AppCtrl'
     })
 
-  
+    // SLIDES
     .state('app.intro', {
       url: '/intro',
       views: {
         'menuContent': {
-          templateUrl: 'templates/intro.html',
+          templateUrl: 'templates/slides/intro.html',
           controller: 'IntroCtrl'
         }
       }
@@ -57,7 +57,7 @@ angular.module('starter', ['ionic', 'starter.controllers'])
       url: '/slide1',
       views: {
         'menuContent': {
-          templateUrl: 'templates/slide1.html',
+          templateUrl: 'templates/slides/slide1.html',
           controller: 'SlideOneCtrl'
         }
       }
@@ -66,7 +66,7 @@ angular.module('starter', ['ionic', 'starter.controllers'])
       url: '/slide2',
       views: {
         'menuContent': {
-          templateUrl: 'templates/slide2.html',
+          templateUrl: 'templates/slides/slide2.html',
           controller: 'SlideTwoCtrl'
         }
       }
@@ -75,7 +75,7 @@ angular.module('starter', ['ionic', 'starter.controllers'])
       url: '/slide3',
       views: {
         'menuContent': {
-          templateUrl: 'templates/slide3.html',
+          templateUrl: 'templates/slides/slide3.html',
           controller: 'SlideThreeCtrl'
         }
       }
@@ -84,7 +84,7 @@ angular.module('starter', ['ionic', 'starter.controllers'])
       url: '/slide4',
       views: {
         'menuContent': {
-          templateUrl: 'templates/slide4.html',
+          templateUrl: 'templates/slides/slide4.html',
           controller: 'SlideFourCtrl'
         }
       }
@@ -93,7 +93,7 @@ angular.module('starter', ['ionic', 'starter.controllers'])
       url: '/slide5',
       views: {
         'menuContent': {
-          templateUrl: 'templates/slide5.html',
+          templateUrl: 'templates/slides/slide5.html',
           controller: 'SlideFiveCtrl'
         }
       }
@@ -102,17 +102,27 @@ angular.module('starter', ['ionic', 'starter.controllers'])
       url: '/slide6',
       views: {
         'menuContent': {
-          templateUrl: 'templates/slide6.html',
+          templateUrl: 'templates/slides/slide6.html',
           controller: 'SlideSixCtrl'
         }
       }
     })
-    .state('app.form1', {
-      url: '/form1',
+    // INFOGRAFICOS
+    .state('app.infografico1', {
+      url: '/infografico1',
       views: {
         'menuContent': {
-          templateUrl: 'templates/slideForm.html',
-          controller: 'SlideFormCtrl'
+          templateUrl: 'templates/infograficos/infografico1.html',
+          controller: 'InfograficoUmCtrl'
+        }
+      }
+    })
+    .state('app.infografico2', {
+      url: '/infografico2',
+      views: {
+        'menuContent': {
+          templateUrl: 'templates/infograficos/infografico2.html',
+          controller: 'InfograficoDoisCtrl'
         }
       }
     })

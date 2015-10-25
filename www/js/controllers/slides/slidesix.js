@@ -40,7 +40,7 @@ angular.module('starter.controllers')
 			$scope.disponivel = false;
 
 			$scope.call = function (){
-				$location.path('app/form1');
+				$location.path('app/infografico1');
 			};
 
 		// INICIALIZA

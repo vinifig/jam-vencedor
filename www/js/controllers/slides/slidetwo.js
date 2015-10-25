@@ -1,4 +1,4 @@
-angular.module('starter.controllers').
+angular.module('starter.controllers')
 	.controller("SlideTwoCtrl",function($scope, $timeout, $interval, $location){ // TEXTO
 		// PRIVATE
 			var i = 0;

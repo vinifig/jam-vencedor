@@ -1,4 +1,11 @@
 {
   "name": "jam-vencedor",
-  "app_id": "e58c1c4b"
+  "app_id": "e58c1c4b",
+  "browsers": [
+    {
+      "platform": "android",
+      "browser": "crosswalk",
+      "version": "12.41.296.5"
+    }
+  ]
 }

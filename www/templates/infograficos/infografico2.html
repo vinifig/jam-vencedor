@@ -1,0 +1,23 @@
+<ion-view view-title="Infográfico">
+  <ion-content scroll="false">
+    <div class="box infografico2">
+  		<h1>105 milhões de mulheres em 2015</h1>
+  		<h2>Se a população de mulheres fossem representadas em 20 mulheres, os riscos sem pílula seriam os seguintes:</h2>
+			<div class="leftSideContainer">
+				<div class="leftSide selected" ng-click="mudaMortos(1)">31% das gestações de mulheres entre 15 e 49 anos acabam em aborto.</div>
+				<div class="leftSide" ng-click="mudaMortos(2)">Quadros infecciosos e h e m o r r á g i c o s decorrentes de abortos representam 5% as mortes maternas</div>
+				<div class="leftSide" ng-click="mudaMortos(3)">1,4 milhões de abortos clandestinos no brasil</div>
+			</div>
+			<div class="rightSide">
+				<!-- <img ng-src="img/infografico2/mulher_viva.png" ng-repeat="mulher in mulheres"/> -->
+				<img ng-src="img/infografico2/mulher_{{$index < numberDeMortos ? 'morta' : 'viva'}}.png" ng-repeat="mulher in mulheres"/>
+				<h2><img src="img/infografico2/mulher_viva.png" class="example"> <span>= 2 milhões</span></h2>
+				<div class="fonte">
+					<p class="visible">Fonte:</p>
+					<p class="visible">CHAVES, José Humberto Belmino; PESSINI, Leo; BEZERRA, Antônio Fernando de Sousa; REGO, Guilhermina; NUNES, Rui ; 2012. “A interrupção da gravidez na adolescência: aspectos epidemiológicos numa maternidade pública no nordeste do Brasil”. Revista de Saúde Social, São Paulo, v. 21, p. 216-256</p>
+				</div>
+			</div>
+			<button class="button icon-right ion-chevron-right button-aborto disponivel" ng-click="call()"></button> <!-- a cada clique um aborto -->
+    </div>
+  </ion-content>
+</ion-view>
