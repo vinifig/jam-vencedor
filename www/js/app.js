@@ -7,6 +7,15 @@
 angular.module('starter', ['ionic', 'starter.controllers'])
 
 .run(function($ionicPlatform, $rootScope) {
+// if (window.StatusBar) {
+//       StatusBar.overlaysWebView(true);
+//       StatusBar.styleBlackOpaque();
+//       if (ionic.Platform.isAndroid())
+//         StatusBar.backgroundColorByHexString("#424C55"); // AJUSTE DA COR SEGUINDO A GUIDELINE
+//       else if( ionic.Platform.isIOS() )
+//         StatusBar.backgroundColorByHexString("#2f363d"); // AJUSTE DA COR SEGUINDO EXEMPLOS DA INTERNET
+//     }    
+  
   $ionicPlatform.registerBackButtonAction(function(e){
     ionic.Platform.exitApp();
   }, 100)
@@ -123,6 +132,15 @@ angular.module('starter', ['ionic', 'starter.controllers'])
         'menuContent': {
           templateUrl: 'templates/infograficos/infografico2.html',
           controller: 'InfograficoDoisCtrl'
+        }
+      }
+    })
+    .state('app.infografico3', {
+      url: '/infografico3',
+      views: {
+        'menuContent': {
+          templateUrl: 'templates/infograficos/infografico3.html',
+          controller: 'InfograficoTresCtrl'
         }
       }
     })

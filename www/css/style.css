@@ -358,7 +358,7 @@ button.visible{
 
 	}
 
-	.infografico1 .button, .infografico2 .button{
+	.infografico1 .button, .infografico2 .button, .infografico3 .button{
 		background-color: rgba(0, 0, 0, 0.75);
 		position: absolute;
 		right:6vw;
@@ -447,7 +447,7 @@ button.visible{
 		background-size: 100% 100%;
 	}
 
-	.infografico1 .button, .infografico2 .button{
+	.infografico1 .button, .infografico2 .button, .infografico3 .button{
 		background-color: rgba(0, 0, 0, 0.75);
 		position: absolute;
 		right:6vw;
@@ -639,4 +639,91 @@ button.visible{
 	.infografico2 .rightSide .fonte p{
 		color:black !important;
 	}
+}
+
+/*INFOGRAFICO 3*/
+
+@media all and (orientation: landscape) {
+	.infografico3{
+		background: rgb(126, 17, 22);
+		
+		padding: 25vh 3.90vw;
+	}
+	.infografico3 *{
+		color:white !important;
+		font-family: "bebas_neue" !important;
+	}
+	.infografico3 h1{
+		font-size:8vw;
+		line-height: 11vw;
+	}
+	.infografico3 p{
+		font-size:3vw;
+	}
+
+	.infografico3 p span.caixaEscura{
+		padding: 1vh 5vh 0 5vh;
+		background-color:rgba(0,0,0,0.7);
+		font-size:6vw;
+	}
+
+	.infografico3 .content-left{
+		max-width:57vw;
+	}
+
+	.infografico3 .content-right{
+		max-width:35.2vw;
+	}
+
+	.infografico3 .content-left, .infografico3 .content-right{
+		float:left;
+	}
+
+	.visibleOnPortrait{
+		display:none;
+	}
+}
+
+
+@media all and (orientation: portrait) {
+	.infografico3{
+		background: rgb(135, 33, 36);
+		padding: 25vh 3.90vw;
+	}
+	.infografico3 *{
+		color:white !important;
+		font-family: "bebas_neue" !important;
+	}
+	.infografico3 h1{
+		font-size:8vw;
+		line-height: 8vw;
+	}
+	.infografico3 p{
+		font-size:5vw;
+		line-height: 8vw
+	}
+
+	.infografico3 p span.caixaEscura{
+		padding: 1vh 5vh 0 5vh;
+		background-color:rgba(0,0,0,0.7);
+		font-size:6vw;
+		width:100vw !important;
+	}
+
+	.infografico3 .content-left{
+		max-width:57vw;
+	}
+
+	.infografico3 .content-right{
+		max-width:35.2vw;
+	}
+
+	.infografico3 .content-left, .infografico3 .content-right{
+		float:left;
+	}
+
+	.visibleOnPortrait{
+		display:inline-block;
+	}
+
 }

@@ -4,10 +4,12 @@ angular.module('starter.controllers')
 			var nMortos = [6,3,1];
 		// PUBLIC
 			$scope.mulheres = [];
-			$scope.numberDeMortos = 0
+			$scope.numberDeMortos = 0;
+			
 			$scope.call = function(){
-				$location.path("#/app/infografico3");
+				$location.path("/app/infografico3");
 			}
+
 			$scope.mudaMortos = function(index){
 				var btn = document.querySelectorAll(".leftSide");
 				for(var i = 0; i < btn.length; i++)
