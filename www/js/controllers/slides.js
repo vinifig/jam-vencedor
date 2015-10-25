@@ -8,9 +8,9 @@ angular.module('starter.controllers').
 				$interval(mostraParagrafo,1000);
 			}
 			var mostraParagrafo = function(){
+				$scope.imagem.active = true;
 				if(i < $scope.paragrafos.length){
 					$scope.paragrafos[i].visible = true
-					$scope.imagem.active = true;
 				}
 				else
 					$scope.disponivel = true;
@@ -58,9 +58,9 @@ angular.module('starter.controllers').
 				$interval(mostraParagrafo,1000);
 			}
 			var mostraParagrafo = function(){
+				$scope.imagem.active = true;
 				if(i < $scope.paragrafos.length){
 					$scope.paragrafos[i].visible = true
-					$scope.imagem.active = true;
 				}
 				else
 					$scope.disponivel = true;
@@ -102,9 +102,9 @@ angular.module('starter.controllers').
 				$interval(mostraParagrafo,1000);
 			}
 			var mostraParagrafo = function(){
+				$scope.imagem.active = true;
 				if(i < $scope.paragrafos.length){
 					$scope.paragrafos[i].visible = true
-					$scope.imagem.active = true;
 				}
 				else
 					$scope.disponivel = true;
@@ -146,9 +146,9 @@ angular.module('starter.controllers').
 				$interval(mostraParagrafo,1000);
 			}
 			var mostraParagrafo = function(){
+				$scope.imagem.active = true;
 				if(i < $scope.paragrafos.length){
 					$scope.paragrafos[i].visible = true
-					$scope.imagem.active = true;
 				}
 				else
 					$scope.disponivel = true;
@@ -194,9 +194,9 @@ angular.module('starter.controllers').
 				$interval(mostraParagrafo,1000);
 			}
 			var mostraParagrafo = function(){
+				$scope.imagem.active = true;
 				if(i < $scope.paragrafos.length){
 					$scope.paragrafos[i].visible = true
-					$scope.imagem.active = true;
 				}
 				else
 					$scope.disponivel = true;
@@ -242,9 +242,9 @@ angular.module('starter.controllers').
 				$interval(mostraParagrafo,1000);
 			}
 			var mostraParagrafo = function(){
+				$scope.imagem.active = true;
 				if(i < $scope.paragrafos.length){
 					$scope.paragrafos[i].visible = true
-					$scope.imagem.active = true;
 				}
 				else
 					$scope.disponivel = true;
@@ -274,56 +274,10 @@ angular.module('starter.controllers').
 			$scope.disponivel = false;
 
 			$scope.call = function (){
-				$location.path('app/sl');
+				$location.path('app/form1');
 			};
 
 		// INICIALIZA
 			$timeout(mostraTitulo,500)
-
-	})
-	.controller("SlideFormCtrl",function($scope, $rootScope, $timeout, $interval, $location){ // FORMULARIO
-		// PRIVATE
-			var i = 0;
-			var mostraTitulo = function(){
-				$scope.pergunta.visible = true;
-				$interval(mostraParagrafo,600);
-			}
-			var mostraParagrafo = function(){
-				if(i < $scope.opcoes.length)
-					$scope.opcoes[i].visible = true;
-				i++;
-			}
-
-		// PUBLIC
-			$scope.color = "questionario";
-			$scope.resp = {};
-
-			$scope.pergunta = {
-				"message" : "Você gosta de batata?",
-				"visible" : "false" 
-			}
-			$scope.opcoes = [
-					{
-						"id" : 0,
-						"opcao" : "Lorem ipsum dolor sit sed diam nonummy",
-						"visible" : false
-					},
-					{
-						"id" : 1,
-						"opcao" : "Lorem ipsum dolor sit amet, diam nonummy",
-						"visible" : false
-					}
-			];
-
-			$scope.saveValue = function(){
-				$rootScope.addResp(0,$scope.resp.resp);
-				$location.path("app/chart")
-			}
-			$scope.debug = function(){
-				console.log($scope);
-			}
-		// INICIALIZA
-			$timeout(mostraTitulo,500)
-				
 
 	});

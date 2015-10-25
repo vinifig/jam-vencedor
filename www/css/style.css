@@ -99,10 +99,6 @@ button.visible{
 	display:none;
 }
 
-.selected{
-	text-decoration: underline;
-}
-
 @media all and (orientation: landscape) {
 	.box{
 		min-height:100vh !important;
@@ -172,8 +168,34 @@ button.visible{
 		margin-top:30%;
 	}
 
+	/* PESQUISA */
 
+	.labelDivider{
+		display:table;
+		margin-bottom: 2vw;
+	}
 
+	.labelDivider span{
+		font-size:5vw;
+		margin-left: 2vw;
+		color:white;
+	}
+
+	.checker{
+		background:white;
+		float:left;
+		color:transparent;
+		width:10vw !important;
+		height:10vw !important;
+	}
+
+	.checker.selected{
+		background:green;
+	}
+	.ion-paper-airplane:before{
+		font-weight: lighter;
+		font-size:1.5vw;
+	}
 }
 
 @media all and (orientation: portrait) {

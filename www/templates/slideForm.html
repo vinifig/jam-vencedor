@@ -2,12 +2,14 @@
   <ion-content scroll="false">
     <form class="box {{color}}"> 
     	<h2 ng-class="pergunta.visible ? 'visible' : ''">{{pergunta.message}}</h2>
-  		<label ng-repeat="opcao in opcoes track by $index" for="radio{{$index}}">
+  		<label class="labelDivider" ng-repeat="opcao in opcoes track by $index" for="radio{{$index}}">
   			<input class="jamRadio" id="radio{{$index}}" name="resp" ng-model="resp.resp" type="radio" value="{{$index}}">
-  			<p ng-class="$index == resp.resp ? 'selected' : ''" class="visible">{{$index}} - {{opcao.opcao}}</p>
+        <div class="checker" ng-class="{'selected': $index == resp.resp} ">
+        </div>
+        <span>{{opcao.opcao}}</span>
   		</label>
-    	<button class="button button-balanced" ng-click="saveValue()" ng-class="resp.resp != undefined ? 'visible' : ''" >Continuar</button>
-    	{{resp.resp}}
+    	<button class="button icon-right ion-paper-airplane button-balanced" ng-click="saveValue()" ng-class="resp.resp != undefined ? 'visible' : ''" ></button>
+      <button class="button icon-right ion-ios-redo-outline button-balanced" ng-click="saveValue()" ng-class="resp.resp != undefined ? 'visible' : ''" ></button>
     </form>
   </ion-content>
 </ion-view>

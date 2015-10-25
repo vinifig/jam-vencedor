@@ -107,12 +107,12 @@ angular.module('starter', ['ionic', 'starter.controllers'])
         }
       }
     })
-    .state('app.chart', {
-      url: '/chart',
+    .state('app.form1', {
+      url: '/form1',
       views: {
         'menuContent': {
-          templateUrl: 'templates/chart.html',
-          controller: 'ChartCtrl'
+          templateUrl: 'templates/slideForm.html',
+          controller: 'SlideFormCtrl'
         }
       }
     })
