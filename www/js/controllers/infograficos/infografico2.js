@@ -19,6 +19,18 @@ angular.module('starter.controllers')
 			}
 
 		// INICIALIZA
+
+			$scope.$on('$ionicView.enter', function(){
+				if (window.StatusBar) {
+		      StatusBar.overlaysWebView(true);
+		      StatusBar.styleBlackOpaque();
+		      if (ionic.Platform.isAndroid())
+		        StatusBar.backgroundColorByHexString("#A3E0FA "); // AJUSTE DA COR SEGUINDO A GUIDELINE
+		      else if( ionic.Platform.isIOS() )
+		        StatusBar.backgroundColorByHexString("#D5EFFA"); // AJUSTE DA COR SEGUINDO EXEMPLOS DA INTERNET
+		    }    
+			});	
+
 			var init = function(){
 				for ( var i = 0; i < 20; i++)
 					$scope.mulheres.push(i);

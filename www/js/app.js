@@ -7,14 +7,6 @@
 angular.module('starter', ['ionic', 'starter.controllers'])
 
 .run(function($ionicPlatform, $rootScope) {
-// if (window.StatusBar) {
-//       StatusBar.overlaysWebView(true);
-//       StatusBar.styleBlackOpaque();
-//       if (ionic.Platform.isAndroid())
-//         StatusBar.backgroundColorByHexString("#424C55"); // AJUSTE DA COR SEGUINDO A GUIDELINE
-//       else if( ionic.Platform.isIOS() )
-//         StatusBar.backgroundColorByHexString("#2f363d"); // AJUSTE DA COR SEGUINDO EXEMPLOS DA INTERNET
-//     }    
   
   $ionicPlatform.registerBackButtonAction(function(e){
     ionic.Platform.exitApp();
@@ -26,7 +18,16 @@ angular.module('starter', ['ionic', 'starter.controllers'])
   }
 
   $ionicPlatform.ready(function() {
-
+    $scope.$on('$ionicView.enter', function(){
+      if (window.StatusBar) {
+        StatusBar.overlaysWebView(true);
+        StatusBar.styleBlackOpaque();
+        if (ionic.Platform.isAndroid())
+          StatusBar.backgroundColorByHexString("#D85CA8"); // AJUSTE DA COR SEGUINDO A GUIDELINE
+        else if( ionic.Platform.isIOS() )
+          StatusBar.backgroundColorByHexString("#D888B9"); // AJUSTE DA COR SEGUINDO EXEMPLOS DA INTERNET
+      }    
+    }); 
 
     // Hide the accessory bar by default (remove this to show the accessory bar above the keyboard
     // for form inputs)

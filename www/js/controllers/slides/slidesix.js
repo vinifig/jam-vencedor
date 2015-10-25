@@ -45,5 +45,14 @@ angular.module('starter.controllers')
 
 		// INICIALIZA
 			$timeout(mostraTitulo,500)
-
+			$scope.$on('$ionicView.enter', function(){
+				if (window.StatusBar) {
+		      StatusBar.overlaysWebView(true);
+		      StatusBar.styleBlackOpaque();
+		      if (ionic.Platform.isAndroid())
+		        StatusBar.backgroundColorByHexString("#9B35A1"); // AJUSTE DA COR SEGUINDO A GUIDELINE
+		      else if( ionic.Platform.isIOS() )
+		        StatusBar.backgroundColorByHexString("#9D55A1"); // AJUSTE DA COR SEGUINDO EXEMPLOS DA INTERNET
+		    }    
+			});	
 	});

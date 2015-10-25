@@ -7,5 +7,15 @@ angular.module('starter.controllers')
 				$location.path("app/infografico2");
 			}
 		// INICIALIZA
+			$scope.$on('$ionicView.enter', function(){
+				if (window.StatusBar) {
+		      StatusBar.overlaysWebView(true);
+		      StatusBar.styleBlackOpaque();
+		      if (ionic.Platform.isAndroid())
+		        StatusBar.backgroundColorByHexString("#90BADD"); // AJUSTE DA COR SEGUINDO A GUIDELINE
+		      else if( ionic.Platform.isIOS() )
+		        StatusBar.backgroundColorByHexString("#BACDDD"); // AJUSTE DA COR SEGUINDO EXEMPLOS DA INTERNET
+		    }    
+			});	
 
 	});
