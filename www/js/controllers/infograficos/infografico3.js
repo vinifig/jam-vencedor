@@ -4,7 +4,7 @@ angular.module('starter.controllers')
 
 		// PUBLIC
 			$scope.call = function(){
-				$location.path("/app/slideFinal");
+				$location.path("/app/slide7");
 			}
 
 		// INICIALIZA

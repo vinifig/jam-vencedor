@@ -18,7 +18,6 @@ angular.module('starter', ['ionic', 'starter.controllers'])
   }
 
   $ionicPlatform.ready(function() {
-    $scope.$on('$ionicView.enter', function(){
       if (window.StatusBar) {
         StatusBar.overlaysWebView(true);
         StatusBar.styleBlackOpaque();
@@ -27,7 +26,6 @@ angular.module('starter', ['ionic', 'starter.controllers'])
         else if( ionic.Platform.isIOS() )
           StatusBar.backgroundColorByHexString("#D888B9"); // AJUSTE DA COR SEGUINDO EXEMPLOS DA INTERNET
       }    
-    }); 
 
     // Hide the accessory bar by default (remove this to show the accessory bar above the keyboard
     // for form inputs)
@@ -114,6 +112,16 @@ angular.module('starter', ['ionic', 'starter.controllers'])
         'menuContent': {
           templateUrl: 'templates/slides/slide6.html',
           controller: 'SlideSixCtrl'
+        }
+      }
+    })
+    // SLIDE FINAL
+    .state('app.slide7', { 
+      url: '/slide7',
+      views: {
+        'menuContent': {
+          templateUrl: 'templates/slides/slide7.html',
+          controller: 'SlideSevenCtrl'
         }
       }
     })
