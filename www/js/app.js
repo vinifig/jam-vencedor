@@ -7,7 +7,9 @@
 angular.module('starter', ['ionic', 'starter.controllers'])
 
 .run(function($ionicPlatform, $rootScope) {
-  
+  $ionicPlatform.registerBackButtonAction(function(e){
+    ionic.Platform.exitApp();
+  }, 100)
   $rootScope.respostas = [];
   $rootScope.addResp = function(index,value){
     $rootScope.respostas[index] = value;
