@@ -237,8 +237,8 @@ button.visible{
 	.box.title .content-right{
 	}
 	.box.title .content-right img{
-		height:35vh;
-		margin-left:-50vw;
+		width:50vw;
+		margin-left:-100vw;
 		transition:2500ms;
 	}
 	
