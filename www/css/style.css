@@ -458,88 +458,185 @@ button.visible{
 
 /*INFOGRAFICO 2*/
 
-.infografico2{
-	background: rgb(213, 239, 250);
-	padding: 6.4vh 3.90vw;
+@media all and (orientation: landscape) {
+	.infografico2{
+		background: rgb(213, 239, 250);
+		padding: 6.4vh 3.90vw;
+	}
+
+	.infografico2 *{
+		font-family: bebas_neue !important;
+	}
+
+	.infografico2 h1{
+		font-size:8.3vw;
+		line-height: 3.5vw
+	}
+
+	.infografico2 h2{
+		margin-left:0.55vw;
+		font-size:2.52vw;
+		color: black !important;
+	}
+
+	.infografico2 .leftSide{
+		width:20vw;
+		cursor: pointer;
+		color: white;
+		background-color: rgb(247, 171, 184);
+		margin-top:1.2vh;
+		padding:1vw 1vh;
+		border-radius:20px;
+		font-size:2vw;
+		line-height: 3vw;
+		transition:500ms;
+	}
+
+	.infografico2 .leftSide:hover, .infografico2 .leftSide.selected{
+		background-color: rgb(255, 113, 137);
+	}
+
+	.infografico2 .leftSideContainer{
+		float:left;
+	}
+
+	.infografico2 .rightSide{
+		margin:1vw;
+		padding-left:3vw;
+		width:70.2vw;
+		float:left;
+	}
+
+	.infografico2 .rightSide img{
+		width:5.2vw;
+		height:22.22vh;
+		margin-right: 1.5vw;
+		margin-bottom: 0.5vw;
+	}
+
+
+	.infografico2 .rightSide h2{
+		max-width:26.3vw;
+	}
+	.infografico2 .rightSide img.example{
+		/*position:absolute;*/
+		margin-left:-0.8vw;
+		margin-right: 0;
+		margin-bottom: 0;
+	}
+
+	.infografico2 .rightSide h2 span{
+		position:absolute;
+		margin-left:2vw;
+		margin-top:4vw;
+		line-height: 5.5vw;
+		font-size:5vw;
+	}
+
+	.infografico2 .rightSide .fonte{
+		margin-left: 28vw !important;
+		margin-top: -10vw !important;
+		font-size:1.4vw;
+		line-height: 2vw;
+		max-width:30vw;
+	}
+
+	.infografico2 .rightSide .fonte p{
+		color:black !important;
+	}
 }
 
-.infografico2 *{
-	font-family: bebas_neue !important;
-}
 
-.infografico2 h1{
-	font-size:8.3vw;
-	line-height: 3.5vw
-}
+@media all and (orientation: portrait) {
+	.infografico2{
+		background: rgb(213, 239, 250);
+		padding: 6.4vw 3.90vh;
+	}
 
-.infografico2 h2{
-	margin-left:0.55vw;
-	font-size:2.52vw;
-	color: black !important;
-}
+	.infografico2 *{
+		font-family: bebas_neue !important;
+	}
 
-.infografico2 .leftSide{
-	width:20vw;
-	cursor: pointer;
-	color: white;
-	background-color: rgb(247, 171, 184);
-	margin-top:1.2vh;
-	padding:1vw 1vh;
-	border-radius:20px;
-	font-size:2vw;
-	line-height: 3vw;
-	transition:500ms;
-}
+	.infografico2 h1{
+		font-size:8.3vh;
+		line-height: 9.3vh;
+		text-align: center;
+	}
 
-.infografico2 .leftSide:hover, .infografico2 .leftSide.selected{
-	background-color: rgb(255, 113, 137);
-}
+	.infografico2 h2{
+		max-width:28vw;
+		margin-left:0.55vw;
+		text-align:justify;
+		font-size:2.7vw;
+		color: black !important;
+	}
 
-.infografico2 .leftSideContainer{
-	float:left;
-}
+	.infografico2 .leftSide{
+		width:30vw;
+		cursor: pointer;
+		color: white;
+		background-color: rgb(247, 171, 184);
+		margin-top:1.2vh;
+		padding:1vw 1vh;
+		text-align:justify;
+		border-radius:20px;
+		font-size:2vh;
+		line-height: 2.5vh;
+		transition:500ms;
+	}
 
-.infografico2 .rightSide{
-	margin:1vw;
-	padding-left:3vw;
-	width:70.2vw;
-	float:left;
-}
+	.infografico2 .leftSide:hover, .infografico2 .leftSide.selected{
+		background-color: rgb(255, 113, 137);
+	}
 
-.infografico2 .rightSide img{
-	width:5.2vw;
-	height:22.22vh;
-	margin-right: 1.5vw;
-	margin-bottom: 0.5vw;
-}
+	.infografico2 .leftSideContainer{
+		float:left;
+	}
+
+	.infografico2 .rightSide{
+		margin:1vw;
+		margin-top:-9vh ;
+		padding-left:3vw;
+		width:50.2vw;
+		float:left;
+	}
+
+	.infografico2 .rightSide img{
+		width:5vh;
+		height:15.22vw;
+		margin-right: 1.5vw;
+		margin-bottom: 0.5vw;
+	}
 
 
-.infografico2 .rightSide h2{
-	max-width:26.3vw;
-}
-.infografico2 .rightSide img.example{
-	/*position:absolute;*/
-	margin-left:-0.8vw;
-	margin-right: 0;
-	margin-bottom: 0;
-}
+	.infografico2 .rightSide h2{
+		max-width:26.3vw;
+		margin-left:-32vw;
+	}
+	.infografico2 .rightSide img.example{
+		/*position:absolute;*/
+		margin-left:-0.8vw;
+		margin-right: 0;
+		margin-bottom: 0;
+	}
 
-.infografico2 .rightSide h2 span{
-	position:absolute;
-	margin-left:2vw;
-	margin-top:4vw;
-	line-height: 5.5vw;
-	font-size:5vw;
-}
+	.infografico2 .rightSide h2 span{
+		position:absolute;
+		margin-left:2vw;
+		margin-top:4vw;
+		line-height: 5.5vw;
+		font-size:5vw;
+	}
 
-.infografico2 .rightSide .fonte{
-	margin-left: 28vw !important;
-	margin-top: -10vw !important;
-	font-size:1.4vw;
-	line-height: 2vw;
-	max-width:30vw;
-}
+	.infografico2 .rightSide .fonte{
+		/*margin-left: 28vw !important;*/
+		margin-top: -10vw !important;
+		font-size:1.7vh;
+		line-height: 2vh;
+		max-width:60vw;
+	}
 
-.infografico2 .rightSide .fonte p{
-	color:black !important;
+	.infografico2 .rightSide .fonte p{
+		color:black !important;
+	}
 }

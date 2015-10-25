@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget id="com.ionicframework.jamvencedor737765" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
-    <name>jam-vencedor</name>
+<widget id="com.ionicframework.jamvencedor737765" version="0.0.2" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+    <name>Sem dias seguintes</name>
     <description>
-        An Ionic Framework and Cordova project.
+        Aplicativo informativo sobre a PL 5069/2013
     </description>
-    <author email="hi@ionicframework" href="http://ionicframework.com/">
-      Ionic Framework Team
+    <author email="developer@ltia.fc.unesp.br" href="http://www.ltia.fc.unesp.com.br/">
+      Equipe três de desenvolvimento na JAM - 10/2015
     </author>
     <content src="index.html" />
     <access origin="*" />
