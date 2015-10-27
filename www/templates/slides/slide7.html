@@ -1,8 +1,33 @@
 <ion-view view-title="Conclusões">
-  <ion-content scroll="false">
-    <div class="box ">
-    	TESTE
-    	<!--<a href="#/app/slide1" ng-class="disponivel ? 'visible' : ''">Continuar</a>-->
+  <ion-content scroll="true">
+    <div class="box final">
+    	
+    	<div class="bioRow">
+    		<img class="image" src="img/slidefinal/sara.png">
+    		<div class="description sara">
+    			<p>Sara vive na europa e nunca quis ter Filhos. Descobriu que estava grávida e abortou na inglaterra onde é permitido desde 1967.<br> Passou por uma cirúrgia de 30 minutos, descansou 20 e foi embora para casa no mesmo dia.</p>
+    		</div>
+    	</div>
+
+    	<div class="bioRow">
+    		<img class="image" src="img/slidefinal/soninha.png">
+    		<div class="description soninha">
+    			<p>Soninha estuda na Universidade de Brasília, nunca soube se queria ter Filhos pelo receio do mundo em que viveriam.<br> Soninha abortou com comprimidos importados, sofreu mas passa bem.</p>
+    		</div>
+    	</div>
+
+    	<div class="bioRow">
+    		<img class="image" src="img/slidefinal/thais.png">
+    		<div class="description thais">
+    			<p>Thaís é funcionária pública e já tem um filho, não pretende engravidar novamente. <br>Comprou remédios para um aborto clandestino e funciona, mas precisou fazer curetagem e em decorrência adquiriu uma infecção generalizada.<br>Thaís morre após uma semana</p>
+    		</div>
+    	</div>
+        <div class="bioRow">
+            <span style="color:black !important; float:left !important;">Link para matéria: <a href="" style="float: none !important;color:#0A4A82 !important;" class="visible" onclick="window.open('http://www.virusplanetario.net/elas-decidem-tres-historias-sobre-aborto/')">Elas decidem: três histórias sobre aborto</a></span>
+        </div>
+        <div class="bioRow">
+            <button class="button icon-right ion-chevron-right button-aborto visible" style="position: relative !important; margin-top:5px;margin-left:80vw;" ng-click="call()"></button> <!-- a cada clique um aborto -->
+        </div>
     </div>
   </ion-content>
 </ion-view>

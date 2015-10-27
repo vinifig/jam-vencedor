@@ -19,6 +19,11 @@
   src: url('../fonts/Bellerose.ttf');
 }
 
+@font-face {
+	font-family:'code';
+  src: url('../fonts/code.otf');
+}
+
 /* SLIDES */
 
 .box p{
@@ -83,6 +88,14 @@ button.visible{
 	background: #9d55a1;
 }
 
+.final{
+	background: #fff;
+}
+
+.situacao{
+	background: #D72D2F;
+}
+
 /* FIM BACKGROUNDS */
 
 .item-radio{
@@ -105,6 +118,7 @@ button.visible{
 		max-height:100vh !important;
 		padding: 6.4vh 3.90vw ;
 	}
+
 	/* INTRO SLIDE */
 	.box.intro p{
 		font-size:5.5vw !important;
@@ -112,7 +126,7 @@ button.visible{
 	}
 
 	.box.intro p.breakline{
-		margin-bottom:10vh;
+		margin-bottom:2vh;
 	}
 
 	.box .button-aborto{
@@ -208,7 +222,7 @@ button.visible{
 
 	/* INTRO SLIDE */
 	.box.intro{
-		padding-top: 16vh;
+		padding-top: 2vh;
 	}
 	.box.intro p{
 		font-size:9vw !important;
@@ -726,4 +740,89 @@ button.visible{
 		display:inline-block;
 	}
 
+}
+
+/* SLIDE SEMIFINAL */
+
+.box.final{
+	padding-bottom:5vh;
+	min-height:100vh;
+	max-height: none;
+}
+
+.final .bioRow{
+	clear:both;
+	padding-top:30px;
+	padding-bottom:30px;
+	margin-bottom:20px !important;
+}
+
+.bioRow *{
+	font-family: "code";
+	font-size: 13px;
+	color:white;
+}
+
+.bioRow p{
+	max-width:50vw !important;
+	padding:2vw;
+	border-radius:20px;
+	color:white !important;
+	background: green;
+	font-size:20px;
+	letter-spacing: 3px;
+	line-height: 25px;
+}
+
+.bioRow img{
+	max-width:20vw;
+}
+
+
+.final .bioRow:nth-child(odd) * {
+	float: left;
+}
+
+.final .bioRow:nth-child(odd) p{
+	margin-left:15vw;
+	margin-right:5vw;
+}
+
+
+.final .bioRow:nth-child(even) *{
+	float: right;
+}
+
+.final .bioRow:nth-child(even) p{
+	margin-right:15vw;
+	margin-left:5vw;
+}
+
+.bioRow .description.sara p{
+	background: rgb(125, 161, 58);
+}
+.bioRow .description.soninha p{
+	background: rgb(56, 95, 163);
+}
+.bioRow .description.thais p{
+	background: rgb(201, 73, 69);
+}
+
+@media (max-width: 600px){
+	.bioRow{
+		/*width:80vw;*/
+	}
+	.bioRow p{
+		/*width:300px;*/
+		font-size: 12px;
+	}
+	.bioRow img,.bioRow .description{
+		/*clear:both !important; */
+	}
+}
+
+/* SLIDE FINAL */
+
+.finalMessage{
+	text-align:center;
 }

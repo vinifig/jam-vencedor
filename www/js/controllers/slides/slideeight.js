@@ -1,5 +1,5 @@
 angular.module('starter.controllers')
-	.controller("SlideSixCtrl",function($scope, $timeout, $interval, $location){ // TEXTO
+	.controller("SlideEightCtrl",function($scope, $timeout, $interval, $location){ // TEXTO
 		// PRIVATE
 			var i = 0;
 
@@ -18,22 +18,22 @@ angular.module('starter.controllers')
 			}
 
 		// PUBLIC
-			$scope.color = "negligencia";
+			$scope.color = "situacao";
 			$scope.imagem = {
-				"url":"tudo-06.png",
+				"url":"tudo-07.png",
 				"active":false
 			};
 			$scope.titulo = {
-				"message": "Negligência",
+				"message": "A Situação",
 				"visible": false
 			}
 			$scope.paragrafos = [
 				{
-					"message" : "Nenhum proﬁssional de saúde ou instituição, em nenhum caso, poderá ser obrigado a aconselhar, receitar ou administrar procedimento que considere abortivo.",
+					"message" : "A PL5069/2013 está em tramitação e sem data prevista para votação",
 					"visible" : false
 				},
 				{
-					"message" : "Não importa o motivo, incluindo por princípios pessoais ou doutrinas que segue.",
+					"message" : "Pode-se acompanhar o processo clicando nesta imagem:",
 					"visible" : false
 				}
 			];

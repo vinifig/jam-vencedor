@@ -115,13 +115,22 @@ angular.module('starter', ['ionic', 'starter.controllers'])
         }
       }
     })
-    // SLIDE FINAL
+    // SLIDES FINAIS
     .state('app.slide7', { 
       url: '/slide7',
       views: {
         'menuContent': {
           templateUrl: 'templates/slides/slide7.html',
           controller: 'SlideSevenCtrl'
+        }
+      }
+    })
+    .state('app.slide8', { 
+      url: '/slide8',
+      views: {
+        'menuContent': {
+          templateUrl: 'templates/slides/slide8.html',
+          controller: 'SlideEightCtrl'
         }
       }
     })
