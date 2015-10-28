@@ -19,12 +19,7 @@ angular.module('starter', ['ionic', 'starter.controllers'])
 
   $ionicPlatform.ready(function() {
       if (window.StatusBar) {
-        StatusBar.overlaysWebView(true);
-        StatusBar.styleBlackOpaque();
-        if (ionic.Platform.isAndroid())
-          StatusBar.backgroundColorByHexString("#D85CA8"); // AJUSTE DA COR SEGUINDO A GUIDELINE
-        else if( ionic.Platform.isIOS() )
-          StatusBar.backgroundColorByHexString("#D888B9"); // AJUSTE DA COR SEGUINDO EXEMPLOS DA INTERNET
+        StatusBar.hide();
       }    
 
     // Hide the accessory bar by default (remove this to show the accessory bar above the keyboard
